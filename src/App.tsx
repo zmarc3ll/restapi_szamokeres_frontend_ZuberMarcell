@@ -46,7 +46,7 @@ class App extends Component<{}, State>{
 
     handleUpload = async () => {
       const { nevInput, darabInput } = this.state;
-      if(nevInput.trim() === '' || darabInput < 1 ){
+      if(nevInput.trim() === '' || darabInput < 0 ){
         return;
       }
 
@@ -88,10 +88,17 @@ class App extends Component<{}, State>{
           }</td>
           <td>{
             this.state.gyumolcs.map(gyumolcs => 
-              <tr>{gyumolcs.darab} db</tr>
+              <tr>{gyumolcs.darab} db </tr>
             )
           }</td>
-          </table>  
+          </table>
+          {/* <button onClick={ async function deleteGyumolcs(id: number) {
+        const response = await fetch(`localhost:3001/GyumolcsData/${id}`, {
+          method: "DELETE"
+        });
+        return await response.json();
+      }}>Törlés</button> */}
+      <button>Törlés</button>
       </div>
   
     }
