@@ -83,7 +83,7 @@ class App extends Component<{}, State>{
       <table>
         <td>{
             this.state.gyumolcs.map(gyumolcs => 
-              <tr>{gyumolcs.nev}</tr>
+              <tr><strong>{gyumolcs.nev}</strong></tr>
             )
           }</td>
           <td>{
