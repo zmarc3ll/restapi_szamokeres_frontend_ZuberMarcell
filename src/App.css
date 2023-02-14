@@ -38,7 +38,7 @@
 }
 
 body{
-  background-color: cornsilk;
+  background-color: whitesmoke;
   align-content: center;
   text-align: center;
 }
@@ -53,4 +53,11 @@ input{
 
 button{
   margin-top: 15px;
+}
+h2{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+div{
+  background-color:aliceblue;
 }
